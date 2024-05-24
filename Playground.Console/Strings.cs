@@ -1,4 +1,5 @@
 ﻿namespace Playground.Console;
+using static System.Console;
 
 public static class Strings
 {
@@ -30,9 +31,10 @@ public static class Strings
                         }
                         """;
 
-        System.Console.WriteLine(json);
+        WriteLine(json);
         
         StringFind();
+        StringFormat();
     }
 
     public static void StringFind()
@@ -55,5 +57,20 @@ public static class Strings
 
 
         var m = text.Split(startText);
+    }
+    
+    public static void StringFormat()
+    {
+        var name = "Rafael";
+        var age = 50;
+        var salary = 1000.50;
+        var percentage = 0.10;
+        var digits = 123;
+        var noDigits = 456;
+        var decimalValue = 123.456m;
+        var birthDate = new DateTime(1971, 10, 10);
+
+        WriteLine(string.Format("Name: {0}, Age: {1}, Salary: {2:C}, Percentage: {3:P}, Digits: {4:000000}, NoDigits: {5:#####0}, Decimal: {6}, Birth Date: {7:M/d/yy}", name, age, salary, percentage, digits, noDigits, decimalValue, birthDate));
+        WriteLine(string.Format("Bit: {0:B8}", 50));
     }
 }
