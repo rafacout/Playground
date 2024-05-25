@@ -1,4 +1,4 @@
-﻿
+﻿using BenchmarkDotNet.Running;
 using Playground.Console;
 
 Console.WriteLine("Hello C#!");
@@ -9,4 +9,5 @@ Console.WriteLine();
 //Dynamics.Execute();
 //HttpClients.Execute();
 //Operators.Execute();
-Arrays.Execute();
+//Arrays.Execute();
+Exceptions.Execute();
