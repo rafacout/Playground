@@ -13,12 +13,16 @@ Console.WriteLine();
 // LogTrace.Execute();
 // var constructor = new PrimaryConstructor("Rafael", 40);
 
-PersonDelegate person = new PersonDelegate { Name = "Harry" };
-person.Shout += PersonDelegate.Harry_Shout;
-person.Shout += PersonDelegate.Harry_Shout2;
-person.Poke();
-person.Poke();
-person.Poke();
-person.Poke();
+// PersonDelegate person = new PersonDelegate { Name = "Harry" };
+// person.Shout += PersonDelegate.Harry_Shout;
+// person.Shout += PersonDelegate.Harry_Shout2;
+// person.Poke();
+// person.Poke();
+// person.Poke();
+// person.Poke();
 
+//SortListObjects.Execute();
+
+//RandomValues.GenerateNumbers();
+//RandomValues.GenerateStrings();
 

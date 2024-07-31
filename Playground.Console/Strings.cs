@@ -73,4 +73,6 @@ public static class Strings
         WriteLine(string.Format("Name: {0}, Age: {1}, Salary: {2:C}, Percentage: {3:P}, Digits: {4:000000}, NoDigits: {5:#####0}, Decimal: {6}, Birth Date: {7:M/d/yy}", name, age, salary, percentage, digits, noDigits, decimalValue, birthDate));
         WriteLine(string.Format("Bit: {0:B8}", 50));
     }
+    
+    
 }
