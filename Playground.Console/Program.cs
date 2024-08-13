@@ -1,4 +1,5 @@
-﻿using Playground.Console.EntityFramework;
+﻿using Playground.Console;
+using Playground.Console.EntityFramework;
 
 Console.WriteLine("Hello C#!");
 Console.WriteLine();
@@ -16,16 +17,22 @@ Console.WriteLine();
 // PersonDelegate person = new PersonDelegate { Name = "Harry" };
 // person.Shout += PersonDelegate.Harry_Shout;
 // person.Shout += PersonDelegate.Harry_Shout2;
+// person.Shout += (sender, eventArgs) => { Console.WriteLine("Anonymous method"); };
 // person.Poke();
 // person.Poke();
 // person.Poke();
 // person.Poke();
+
+// var result1 = Calculation.Multiply(2, 3);
+// var result2 = Calculation.Add(2, 3);
+// var result3 = Calculation.Square(5);
+// Calculation.Print("Square", result3.ToString());
+// var result4 = Calculation.IsEven(5);
 
 //SortListObjects.Execute();
 
 //RandomValues.GenerateNumbers();
 //RandomValues.GenerateStrings();
 
-using NorthwindDb db = new();
-
-System.Console.WriteLine($"Provider: {db.Database.ProviderName}");
+// using NorthwindDb db = new();
+// System.Console.WriteLine($"Provider: {db.Database.ProviderName}");

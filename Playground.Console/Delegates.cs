@@ -1,13 +1,41 @@
-﻿namespace Playground.Console;
+﻿using System.Dynamic;
+
+namespace Playground.Console;
+
+public static class Calculation
+{
+    #region Delegates
+    public delegate int BinaryOperation(int x, int y);
+
+    public static BinaryOperation Multiply = delegate(int x, int y)
+    {
+        return x * y;
+    };
+    
+    public static BinaryOperation Add = (x, y) => x + y;
+    #endregion
+    
+    #region Func
+    public static Func<int, int> Square = x => x * x;
+    #endregion
+
+    #region Action
+    public static Action<string, string> Print = (text, value) => System.Console.WriteLine($"{text}: {value}");
+    #endregion
+
+    #region Predicate
+    public static Predicate<int> IsEven = x => x % 2 == 0; 
+    #endregion
+}
 
 public class PersonDelegate
 {
     public string Name { get; set; }
     
+    public int AngerLevel;
+    
     #region Events
     public event EventHandler? Shout;
-
-    public int AngerLevel;
 
     public void Poke()
     {
@@ -35,4 +63,3 @@ public class PersonDelegate
         System.Console.WriteLine("Stop it!");
     }
 }
-
