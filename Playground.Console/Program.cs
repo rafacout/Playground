@@ -1,4 +1,4 @@
-﻿using Playground.Console;
+﻿using Playground.Console.EntityFramework;
 
 Console.WriteLine("Hello C#!");
 Console.WriteLine();
@@ -26,3 +26,6 @@ Console.WriteLine();
 //RandomValues.GenerateNumbers();
 //RandomValues.GenerateStrings();
 
+using NorthwindDb db = new();
+
+System.Console.WriteLine($"Provider: {db.Database.ProviderName}");
