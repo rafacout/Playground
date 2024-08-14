@@ -36,3 +36,6 @@ Console.WriteLine();
 
 // using NorthwindDb db = new();
 // System.Console.WriteLine($"Provider: {db.Database.ProviderName}");
+
+//await Tasks.ExecuteTasksAsync();
+await Threads.ExecuteThreadsAsync();
