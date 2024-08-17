@@ -40,3 +40,6 @@ Console.WriteLine();
 
 //await Tasks.ExecuteTasksAsync();
 //await Threads.ExecuteThreadsAsync();
+
+// BenchMarks benchMarks = new();
+// benchMarks.Execute();
