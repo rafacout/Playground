@@ -7,6 +7,7 @@ Console.WriteLine();
 //Strings.Execute();
 //Numbers.Execute();
 //Dynamics.Execute();
+//Reflections.Execute();
 //HttpClients.Execute();
 //Operators.Execute();
 //Arrays.Execute();
@@ -38,4 +39,4 @@ Console.WriteLine();
 // System.Console.WriteLine($"Provider: {db.Database.ProviderName}");
 
 //await Tasks.ExecuteTasksAsync();
-await Threads.ExecuteThreadsAsync();
+//await Threads.ExecuteThreadsAsync();
